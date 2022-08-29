@@ -43,64 +43,64 @@
 //     var food = 'gone';
 // }
 
-// const person = { 
-//     firstName: 'Bob', 
-//     lastName: 'Marley', 
-//     email: 'bob@marley.com', 
-//     password: 'sekureP@ssw0rd9', 
-//     username: 'barley', 
-//     createdAt: 1543945177623
-// };
-// const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
+const person = { 
+    firstName: 'Bob', 
+    lastName: 'Marley', 
+    email: 'bob@marley.com', 
+    password: 'sekureP@ssw0rd9', 
+    username: 'barley', 
+    createdAt: 1543945177623
+};
+const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
 
-// const email = "john@john.com"
-// const {firstName, email: personEmail} = person;
-// console.log(firstName, personEmail);
+const email = "john@john.com"
+const {firstName, email: personEmail} = person;
+console.log(firstName, personEmail);
 
-// const [,,a,,b] = animals
-// console.log(a, b);
-
-
-// const firstName = person.firstName;
-// const email = person.email
-// const secondAnimal = animals[1];
-
-// const person = {
-//     firstName: 'Bob',
-//     lastName: 'Marley',
-//     email: 'bob@marley.com',
-//     password: 'sekureP@ssw0rd9',
-//     username: 'barley',
-//     addresses: [
-//         {
-//             address: '1600 Pennsylvania Avenue',
-//             city: 'Washington, D.C.',
-//             zipcode: '20500',
-//         },
-//         {
-//             address: '221B Baker St.',
-//             city: 'London',
-//             zipcode: 'WC2N 5DU',
-//         }
-//     ],
-//     createdAt: 1543945177623
-// };
-// const { addresses: [,bob] } = person
-// console.log(bob);
+const [,,a,,b] = animals
+console.log(a, b);
 
 
-// const a = [1,2,3,4]
-// // const b = a;
-// const b = [...a];
+const firstName = person.firstName;
+const email = person.email
+const secondAnimal = animals[1];
 
-// a.push(10)
-// b.push(10)
+const person = {
+    firstName: 'Bob',
+    lastName: 'Marley',
+    email: 'bob@marley.com',
+    password: 'sekureP@ssw0rd9',
+    username: 'barley',
+    addresses: [
+        {
+            address: '1600 Pennsylvania Avenue',
+            city: 'Washington, D.C.',
+            zipcode: '20500',
+        },
+        {
+            address: '221B Baker St.',
+            city: 'London',
+            zipcode: 'WC2N 5DU',
+        }
+    ],
+    createdAt: 1543945177623
+};
+const { addresses: [,bob] } = person
+console.log(bob);
 
-// console.log(a); // ?
-// console.log(b); // ?
+// --- rest / spread ---
+const a = [1,2,3,4]
+// const b = a;
+const b = [...a];
+
+a.push(10)
+b.push(10)
+
+console.log(a); // ?
+console.log(b); // ?
 
 
-
+// --- arrow functions ---
 function myName1(name) {
     return "hello " + name
 }
