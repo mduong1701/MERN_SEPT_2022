@@ -5,10 +5,19 @@ Today: 2 weeks and 3 days!
 Exam is open book, platform / - not open GitHub! 👀⚠
 you may only use our class GitHub and yours
 
-👉 Must have 13/14 (90%) core assignments turned in to take the exam.
+👉 Must have 13/14 (90%) core assignments turned in order to take the exam.
 ** we are not speed-running a bootcamp! **
-It's a marathon not a race!
+It's a marathon not a sprint!
 
+👉 Last day to attempt an exam is WED week 4.
+
+👉 may take an exam up to 3 times (2 re-takes)
+
+Advatanges of taking the exam on time:
+	ALGOS every day after
+	more time for your Project
+	become Team Lead for your agile team
+	
 learn.codingdojo.com/exams
 
 EXAM is emulating a take home challege
