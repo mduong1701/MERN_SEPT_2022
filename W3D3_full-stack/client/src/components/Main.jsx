@@ -47,7 +47,7 @@ const Main = (props) => {
 
             {/* loop over all the notes */}
             {
-                notes.map((oneNote, index) => {
+                notes.map((oneNote) => {
                     return (
                         <div key={oneNote._id} className={noteStyle.note}>
                             <Link to={`/note/${oneNote._id}`}>

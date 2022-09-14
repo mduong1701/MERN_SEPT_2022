@@ -9,6 +9,9 @@ const Create = (props) => {
     const [title, setTitle] = useState("")
     const [content, setContent] = useState("")
     const [isImportant, setIsImportant] = useState(false)
+    // DATABASE ERRORS
+    const [errors, setErrors] = useState([]);
+
 
     const createNote = (e) => {
         e.preventDefault();
@@ -21,10 +24,23 @@ const Create = (props) => {
             title, content, isImportant
         })
             .then(res => {
+                console.log("✅ SUCCESS");
                 console.log(res.data);
                 navigate("/notes")
+
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                // TODO: when errors come form server!
+                console.log("❌ ERROR");
+                console.log(err.response.data)
+                const errorResponse = err.response.data.errors; // Get the errors from err.response.data
+                const errorArr = []; // Define a temp error array to push the messages in
+                for (const key of Object.keys(errorResponse)) { // Loop through all errors and get the messages
+                    errorArr.push(errorResponse[key].message)
+                }
+                // Set Errors
+                setErrors(errorArr);
+            })
     }
 
 
@@ -34,6 +50,10 @@ const Create = (props) => {
             {JSON.stringify(title)} <br />
             {JSON.stringify(content)} <br />
             {JSON.stringify(isImportant)}<br />
+            <hr />
+            {JSON.stringify(errors)} 
+            <hr />
+            {errors.map((err, index) => <p style={{color: "red"}} key={index}>{err}</p>)}
 
             <form onSubmit={createNote}>
                 title: <input onChange={e => setTitle(e.target.value)} value={title} /> <br />
